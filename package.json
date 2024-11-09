@@ -1,0 +1,21 @@
+{
+  "name": "linthtml-config-expa",
+  "version": "1.0.0",
+  "description": " LintHTML config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "linthtml test/*.html --config index.js"
+  },
+  "repository": "nikolai-shabalin/linthtml-config-expa",
+  "keywords": [],
+  "author": "Nikolai Shabalin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolai-shabalin/linthtml-rules-expa/issues"
+  },
+  "homepage": "https://github.com/nikolai-shabalin/linthtml-rules-expa#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "0.10.1",
+    "linthtml-rules-expa": "1.0.0"
+  }
+}

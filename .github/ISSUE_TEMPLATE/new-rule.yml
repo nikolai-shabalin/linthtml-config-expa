@@ -1,0 +1,53 @@
+name: 'New Rule'.
+description: 'Issue to propose a new rule to linter'
+title: 'Rule: '
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to share the new rule
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe briefly what will test the rule in your own words
+      description: Checks for the presence of any level header in `<section>`.
+
+  - type: textarea
+    id: bad-example
+    attributes:
+      label: Write code examples for which the rule should generate an error
+      description: |
+        No title
+        ```html
+          <section>
+          <section>
+        ```
+
+  - type: textarea
+    id: good-example
+    attributes:
+      label: Write examples of code that the rule should not respond to
+      description: |
+        With the title
+        ```html
+        <section>
+          <h2></h2>
+        <section>
+        ```
+        
+        With any nesting
+        ```html
+        <section>
+          <div>
+            <h2></h2>
+          </div>
+        <section>
+        ```
+
+  - type: textarea
+    id: free
+    attributes:
+      label: A field with a free description.
+      description: Add to that everything else you wanted to tell me
